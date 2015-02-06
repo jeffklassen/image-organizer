@@ -44,5 +44,5 @@ var options = {
 `node index`
 
 ## TODO
-1. Document each module
+1. ~~Document each module~~
 2. Add validation for `srdDir` and `destDir` values.

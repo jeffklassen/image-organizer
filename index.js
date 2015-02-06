@@ -3,7 +3,7 @@ var dateExtractor = require('./lib/dateExtractor');
 
 var options = {
 
-    srcDir: '/home/user/Pictures/InstantUpload/',
+    srcDir: '/home/jeff/Pictures/InstantUpload/',
     destDir: function (exifData) {
         var year
         try {
@@ -13,7 +13,7 @@ var options = {
             year = '10000';
 
         }
-        return '/home/user/Pictures/Pictures/' + year + '/CellPhonePics/';
+        return '/home/jeff/Pictures/Pictures/' + year + '/CellPhonePics/';
     }
 };
 
