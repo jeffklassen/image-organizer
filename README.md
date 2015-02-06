@@ -7,7 +7,11 @@ Sort Images by Exif Attributes
 
 1. Download the project by running:
 
-`git clone git@github.com:jeffklassen/image-organizer.git`
+   `git clone git@github.com:jeffklassen/image-organizer.git`
+
+    **OR**
+
+   run `npm install imageorganize`
 
 2. run `npm install` to download the dependencies
 
@@ -35,9 +39,22 @@ var options = {
 
 **Please note**: since exif values are applied inconsistenly by different cameras, it may be necessary to check multiple exif data locations to get the value you are looking for. Check out `dateExtractor.js` for how I extract the creation date value for multiple images.
 
-### First Run
+### Usage
 
-`node index`
+```javascript
+var imageOrganizer = require('imageorganize').ImageOrganizer;
+
+var options = {
+
+    srcDir: '/home/jeff/Pictures/singleton/',
+    destDir: 'home/'
+};
+
+
+
+imageOrganizer(options);
+
+```
 
 ## TODO
 1. ~~Document each module~~

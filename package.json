@@ -1,6 +1,6 @@
 {
     "name": "imageorganize",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Sort images by Exif Attributes",
     "main": "index.js",
     "scripts": {
