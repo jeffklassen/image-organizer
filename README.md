@@ -1,10 +1,6 @@
 # image-organizer
 Sort Images by Exif Attributes
 
-## Requirements
-
-Requires gomfunkel's [node-exif](https://github.com/gomfunkel/node-exif) package.
-
 ## Getting started
 
 ### Installation
@@ -13,7 +9,7 @@ Requires gomfunkel's [node-exif](https://github.com/gomfunkel/node-exif) package
 
 `git clone git@github.com:jeffklassen/image-organizer.git`
 
-2. run `npm install` to download the node-exif dependency
+2. run `npm install` to download the dependencies
 
 ### Configuration
 

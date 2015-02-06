@@ -1,5 +1,5 @@
 {
-    "name": "imageutils",
+    "name": "imageorganize",
     "version": "1.0.0",
     "description": "Sort images by Exif Attributes",
     "main": "index.js",
@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/jeffklassen/image-organizer",
     "dependencies": {
-        "exif": "0.4.0"
+        "exif": "0.4.0",
+        "path-exif-mapper": "0.1.1"
     }
 }
