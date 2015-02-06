@@ -7,6 +7,16 @@ Requires gomfunkel's [node-exif](https://github.com/gomfunkel/node-exif) package
 
 ## Getting started
 
+### Installation
+
+1. Download the project by running:
+
+`git clone git@github.com:jeffklassen/image-organizer.git`
+
+2. run `npm install` to download the node-exif dependency
+
+### Configuration
+
 Start at `index.js` and you'll notice that photoOrganizer requires an `options` object with two fields: `srcDir` and `destDir`.
 
 `srcDir` is a string value for the directory containing the pictures you want to move.
@@ -28,6 +38,10 @@ var options = {
 ```
 
 **Please note**: since exif values are applied inconsistenly by different cameras, it may be necessary to check multiple exif data locations to get the value you are looking for. Check out `dateExtractor.js` for how I extract the creation date value for multiple images.
+
+### First Run
+
+`node index`
 
 ## TODO
 1. Document each module
