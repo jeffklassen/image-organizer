@@ -44,12 +44,32 @@ var options = {
 ```javascript
 var imageOrganizer = require('imageorganize').ImageOrganizer;
 
+//simply moves all pictures from a srcDir to a destDir, not very useful
 var options = {
 
     srcDir: '/home/jeff/Pictures/singleton/',
     destDir: 'home/'
 };
 
+// makes the dest dir rely on a function
+var options = {
+
+    srcDir: '/home/jeff/Pictures/singleton/',
+    destDir: destDir: function (exifData) {
+        // using the first 4 characters of the exif image.CreateDate value (which turns out to be the year)
+        // to sort pictures by year
+        var year = exifData.image.CreateDate.substr(0, 4);
+       
+        return '/home/user/Pictures/' + year + '/CellPhonePics/';
+    }
+};
+
+//only displays the exif data
+var options = {
+    displayOnly: true,
+    srcDir: '/home/jeff/Pictures/singleton/',
+
+};
 
 
 imageOrganizer(options);

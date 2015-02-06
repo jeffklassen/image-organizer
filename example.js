@@ -2,7 +2,7 @@ var imageOrganizer = require('./index').ImageOrganizer;
 var dateExtractor = require('./lib/dateExtractor');
 
 var options = {
-
+    //displayOnly: true,
     srcDir: '/home/jeff/Pictures/singleton/',
     destDir: function (exifData) {
         var year
@@ -16,7 +16,5 @@ var options = {
         return '/home/jeff/Pictures/Pictures/' + year + '/CellPhonePics/';
     }
 };
-
-
 
 imageOrganizer(options);
