@@ -1,5 +1,5 @@
-var photoOrganizer = require('./photoOrganizer');
-var dateExtractor = require('./dateExtractor');
+var photoOrganizer = require('./lib/photoOrganizer');
+var dateExtractor = require('./lib/dateExtractor');
 
 var options = {
 
@@ -16,5 +16,7 @@ var options = {
         return '/home/user/Pictures/Pictures/' + year + '/CellPhonePics/';
     }
 };
+
+
 
 photoOrganizer(options);
